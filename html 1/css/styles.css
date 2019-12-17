@@ -1,0 +1,101 @@
+/* @import url(‘https://fonts.googleapis.com/css?family=Open+Sans:400,700’); */
+
+/* Inicio de Variables */
+:root{
+/* todo lo que se pongo en root es accesible a todas las clases */
+
+/* Variable color */
+--green-color:#308300;  
+/* poniendo las variables de color se puede estandarizar todos los colores desdes aquí */
+
+/* Variables Espaciado */
+--space:10px;
+/* Variables de fuentes */
+--fontSize:16px;
+
+--box: opx o 2px 1px #e6e5e9;
+}
+/* Final de Variables */
+
+html,body{
+    padding:0px;
+    margin:0px;
+    font-size: 12px;
+    font-family:Helvetica;
+}
+
+nav{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    color:white;
+    align-items: center;
+  
+}
+
+nav ul{
+    display: flex;
+   
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+
+}
+
+nav li a{
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color:black
+}
+
+/*_____________________ Main Section*/
+.main_section{
+    padding:10%;
+    text-align: center;
+
+}
+.products{
+    background-image: url("../images/Kusilo\ Logo\ copia.ico");
+    height:200px;
+    background-size: cover;
+    background-position: center top;
+    padding:15%;
+    display: flex;
+    text-align: center;
+}
+    .product{
+    padding: var(--space);
+    margin-top: -250px;
+    color: rgb(98, 98, 98);
+    }
+    .product .content{
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 2px black;
+}
+
+.imag_content{
+    text-align: center;
+}
+
+.main_button{
+    background-color: var(--green-color);
+    color: white;
+    text-decoration: none;
+    font-size: var(--fontSize);
+    width: 80%;
+    border: 0;
+    padding: var(--space);
+    cursor: pointer;
+    border-radius: var(--space);
+}
+
+.main_button:hover{
+    background-color: #466f2e;
+/* este efe4cto nos ayuda a darle efecto al botón cuando se pasa por encima el ratón */
+}
